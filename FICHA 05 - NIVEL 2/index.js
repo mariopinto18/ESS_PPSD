@@ -106,7 +106,7 @@ document.querySelector('#btnFilter').addEventListener('click', function () {
 // ORDENAR POR RISCO: Ordenado por valorLDL, que é o indicador que determina o risco coronário
 //----------------------------------
 document.querySelector('#btnOrder').addEventListener('click', function () {
-    leiturasList.sort((a,b) => (a.valorLDL > b.valorHDL) ? 1: -1)
+    leiturasList.sort((a,b) => (a.valorLDL > b.valorLDL) ? 1: -1)
     renderTable(leiturasList)
 })
 
