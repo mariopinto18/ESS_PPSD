@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TMB CALCULATOR</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+
+
+<body>
+    <div class="container col-md-6 border bg-light">
+        <div class="jumbotron bg-dark text-white rounded">
+            <h1 class="display-6">TMB Calculator - Taxa Metabólica Basal</h1>
+            <p class="lead">Através da equuação de Mifflin-St. Jeor</p>
+            <p class="lead">Esta é uma equação preditiva para o gasto energético em indivíduos saudáveis que pretendem manter o peso.</p>
+            <a href="https://nutrium.com/blog/pt-pt/equacao-de-mifflin-st-jeor-para-profissionais-de-nutricao/">Equação de Mifflin-St. Jeor para profissionais de nutrição</a>
+        </div>
+
+
+        <form id="idForm">
+            <div class="col-md-6 has-validation">
+                <label for="txtGenero" class="form-label">Indique o Género:</label>
+                <select  id="idGenero">Selecione o Género
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+            </div>
+            
+            <div class="col-md-6 has-validation">
+                <label for="txtAltura" class="form-label">Indique a sua altura (cm)</label>
+                <input type="text" class="form-control" id="txtAltura" value="" required>
+            </div>
+
+            <div class="col-md-6 has-validation">
+                <label for="txtPeso" class="form-label">Indique o seu peso (Kg)</label>
+                <input type="text" class="form-control" id="txtPeso" value="" min=0  max= 150 required>
+            </div>
+            
+            <div class="col-md-6 has-validation">
+                <label for="txtIdade" class="form-label">Indique a sua idade</label>
+                <input type="text" class="form-control" id="txtIdade" value="" min=1 max = 100 required>
+            </div>
+
+            <div class="col-md-6 mt-2 mb-2">            
+                <button class="btn btn-outline-success btn-block" type="submit">Calcular TMB</button>
+            </div>
+
+            <div class="col-md-6 has-validation">
+                <label for="txtTMB" class="form-label"></label>
+                <input type="text" class="form-control" id="txtTMB" value=""  readonly="true" style="font-weight:bold;">Kcal/dia
+            </div>
+        </form>
+        <br>
+        <br>
+        <hr class='my-2'>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
