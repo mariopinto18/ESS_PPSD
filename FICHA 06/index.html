@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     
+    <!-- Responsive Image maps -->
+    <!-- Allows image maps to be used in a responsive design by recalculating the area coordinates  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>ImageMap</title>
+</head>
+<body>
+
+    <div class="mt-4 p-5 bg-primary text-warning rounded">
+        <h1>Licenciatura em Saúde Digital</h1>
+        <h2>Saídas Profissionais</h2>
+    </div>
+    <br>
+    <br>
+
+
+    <img src="DigitalHealth.jpg" usemap ="#workmap" alt="DigitalHealth"
+             class="img-fluid img-responsive rounded  mx-auto d-block">  
+    
+    <map name="workmap">
+        <area shape="rect" coords="201,280,250,389" style="width: 100%;" alt="painting" 
+              href= "#" id = "smartphone">
+        <area shape="circle" coords="556,98, 50" style="width: 100%;" alt="painting" 
+              href= "#" id = "bag">
+    </map>
+
+
+      <!-- Modal parao texto ou Imagem  -->
+      <dialog id="dlgContent">
+        <img id="imgDialog" style="width:50%" src="" alt="">
+        <p id="txtDialog"></p>
+        <br>
+        <button id="btnClosedlgContent">FECHAR</button>
+    </dialog>
+
+
+    <!-- Modal para Vídeo  -->
+    <dialog id = "dlgVideo">
+        <iframe 
+            id="iframeVideo" 
+            title ="youtube video"
+            width="640" 
+            height="360" 
+            allow="autoplay; clipboard-write;picture-in-picture" 
+            scr="">
+        </iframe>
+        <br>
+            <button id="btnCloseVideo">FECHAR</button>
+   </dialog>
+
+
+
+
+    <!-- javascript file -->
+    <script  src="index1.js"></script>
+</body>
+</html>
