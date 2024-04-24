@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+
+    <!-- Responsive Image maps -->
+    <!-- Allows image maps to be used in a responsive design by recalculating the area coordinates  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js" integrity="sha512-eZB7hQa0bRlrKMQ2njpP0d/Klu6o30Gsr8e5FUCjUT3fSlnVkm/1J14n58BuwgaMuObrGb7SvUfQuF8qFsPU4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>ImageMap</title>
+</head>
+<body>
+
+    <div class="mt-4 p-5 bg-primary text-warning rounded">
+        <h1>Licenciatura em Saúde Digital</h1>
+        <h2>Saídas Profissionais</h2>
+    </div>
+    <br>
+    <br>
+
+
+    <img src="DigitalHealth.jpg" usemap ="#workmap" alt="DigitalHealth"
+             class="img-fluid img-responsive rounded  mx-auto d-block">  
+    
+    <map name="workmap">
+        <area shape="rect" coords="201,280,250,389" style="width: 100%;" alt="painting" 
+              href= "#" id = "smartphone">
+        <area shape="circle" coords="556,98, 50" style="width: 100%;" alt="painting" 
+              href= "#" id = "bag">
+    </map>
+
+
+
+   
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="muModalHeader">Licenciatura em Saúde Digital</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div id = "myModalBody" class="modal-body">
+           <!-- o corpo da modal é definido no javascript, conforme o tipo
+                de conteúdo que queremos renderizar -->
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- javascript file -->
+    <script  type = "module" src="index.js"></script>
+</body>
+</html>
