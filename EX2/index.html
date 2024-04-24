@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <!-- Bootstrap core CSS -->
+    <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+
+    <!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     
+    <title>Video</title>
+</head>
+<body>
+
+    <div class="mt-4 p-5 bg-primary text-warning rounded">
+        <h1>Licenciatura em Saúde Digital</h1>
+        <h2>Saídas Profissionais</h2>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+ <div class="container-fluid width: 100%  container-md mx-auto bg-light border">
+
+        <video width="840" height="620" autoplay="false" muted controls  class=" mx-auto d-block">
+            <source src="./Videos/KendirStudios-1.mp4"  type = "video/mp4"/>
+        </video>
+        <br>
+        <div class="mx-auto d-block" style="width: 700px;">
+            <button id="btnPlay">Play</button>
+            <button id="btnPause">Pause</button>
+            <button id="btnDuration">Duration</button>
+            <button id="btnGotoStart">Go To Start</button>
+            <button id="btnGotoEnd">Go To End</button>
+            <button id="btnGotoFrame">Go To Frame</button>
+            <button id="btnEditSource">Replace Video</button>
+            <p id="duration"></p> <br>  
+        </div>
+ 
+  </div>
+  
+
+
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+
+  
+    
+    <script  type = "module" src="index.js"></script>
+</body>
+
+</html>
